@@ -45,7 +45,7 @@ const Table = ({ data }) => {
           </thead>
           <tbody>
             {data?.map((info) => (
-              <tr className="bg-white border-b">
+              <tr key={info.date} className="bg-white border-b">
                 <th
                   scope="row"
                   className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap"

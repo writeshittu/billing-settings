@@ -32,11 +32,11 @@ const Dashboard = () => {
     <div>
       <div className="md:grid grid-cols-[280px,1fr]">
         <section className=" relative ">
-          <div className="block fixed overflow-y-scroll top-0 left-0 md:absolute w-full bg-white md:w-[280px] z-10 border-r border-[#ddd]">
+          <div className="block fixed overflow-y-scroll md:overflow-hidden top-0 left-0 md:absolute w-full bg-white md:w-[280px] z-10 border-r border-[#ddd]">
             <Sidebar />
           </div>
         </section>
-        <main className="bg-[#f5f5f5] min-h-screen mt-16 py-5 px-3 md:py-[1.875rem] md:px-[2.2rem]">
+        <main className="bg-[#f5f5f5] min-h-screen mt-16 md:mt-0 py-5 px-3 md:py-[1.875rem] md:px-[2.2rem]">
           <div className="">
             <p className=" text-2xl md:text-[1.875rem] text-gray-900 font-medium leading-[2.375rem]">
               Settings
