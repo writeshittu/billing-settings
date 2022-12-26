@@ -8,6 +8,9 @@ module.exports = {
       fontFamily: {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
       },
+      accentColor: {
+        "primary-600": "#7F56D9",
+      },
     },
   },
   plugins: [],

@@ -49,8 +49,8 @@ const Dashboard = () => {
                 <p
                   key={item}
                   onClick={() => setCurrentTab(item)}
-                  className={`text-[#101828] whitespace-nowrap py-[0.625rem] cursor-pointer hover:bg-gray-50 px-4 font-medium border ${
-                    currentTab === index + 1 && "bg-gray-50"
+                  className={`text-[#101828] whitespace-nowrap py-[0.625rem] cursor-pointer hover:bg-[#F9FAFB] px-4 font-medium border ${
+                    currentTab === index + 1 && "bg-[#F9FAFB]"
                   } border-[#D0D5DD] first:rounded-l-lg last:rounded-r-lg`}
                 >
                   {item}
@@ -79,7 +79,7 @@ const Dashboard = () => {
                     onChange={() =>
                       setContact({ ...contact, email: !contact.email })
                     }
-                    className="h-4 w-4 border border-gray-50 checked:accent-primary-600 checked:border-primary-600 focus:outline-none transition duration-200 align-top cursor-pointer"
+                    className="h-4 w-4 border border-[#F9FAFB] checked:accent-[#7F56D9] checked:border-[#7F56D9] focus:outline-none transition duration-200 align-top cursor-pointer"
                   />
                   <div>
                     <p className="text-[#344054]  font-medium">
@@ -100,7 +100,7 @@ const Dashboard = () => {
                       })
                     }
                     checked={contact.alternateEmail}
-                    className="h-4 w-4 border border-gray-50 checked:accent-primary-600 checked:border-primary-600 focus:outline-none transition duration-200 align-top cursor-pointer"
+                    className="h-4 w-4 border border-[#F9FAFB] checked:accent-[#7F56D9] checked:border-[#7F56D9] focus:outline-none transition duration-200 align-top cursor-pointer"
                   />
                   <div>
                     <label

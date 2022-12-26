@@ -78,7 +78,7 @@ const Sidebar = () => {
           </div>
           <div className=" flex gap-2">
             <p className="text-[#667085] font-medium">Dismiss</p>
-            <p className="text-primary-700 cursor-pointer hover:text-[#9E77ED] font-medium">
+            <p className="text-[ #6941C6] cursor-pointer hover:text-[#9E77ED] font-medium">
               What’s new?
             </p>
           </div>
