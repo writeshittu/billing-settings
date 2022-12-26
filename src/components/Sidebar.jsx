@@ -11,7 +11,7 @@ const Sidebar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <>
-      <div className=" flex justify-between items-center bg-white h-[4rem] border-b border-gray-200 shadow md:hidden">
+      <div className=" flex justify-between items-center bg-white h-[4rem] border-b border-[#EAECF0] shadow md:hidden">
         <div className="flex px-3 gap-2 items-center ">
           <img src={logo} className=" object-cover" alt="untitled logo" />
           <p className="text-[#101828] font-semibold text-xl">Untitled UI</p>
@@ -40,7 +40,7 @@ const Sidebar = () => {
           <input
             type="search"
             placeholder="Search"
-            className="border border-gray-300 rounded-lg py-[10px] px-[.875rem] pl-8 outline-none shadow"
+            className="border border-[#D0D5DD] rounded-lg py-[10px] px-[.875rem] pl-8 outline-none shadow"
           />
         </div>
         {sidebarMenuItem.map((item) => (
@@ -52,7 +52,7 @@ const Sidebar = () => {
           >
             <div className="flex gap-3">
               <img src={item.icon} className=" object-cover" alt={item.title} />
-              <p className="text-[1rem] text-gray-900 font-medium leading-6 ">
+              <p className="text-[1rem] text-[#101828] font-medium leading-6 ">
                 {" "}
                 {item.title}
               </p>
@@ -65,8 +65,8 @@ const Sidebar = () => {
           </div>
         ))}
         <div className="bg-gray-50 my-4 mx-4 px-3 rounded-sm w-[15.4375rem] py-5">
-          <p className="text-gray-900 font-medium">New features available!</p>
-          <p className="text-gray-500">
+          <p className="text-[#101828] font-medium">New features available!</p>
+          <p className="text-[#667085]">
             Check out the new dashboard view. Pages now load faster.{" "}
           </p>
           <div className="my-3 ">
@@ -77,8 +77,8 @@ const Sidebar = () => {
             />
           </div>
           <div className=" flex gap-2">
-            <p className="text-gray-500 font-medium">Dismiss</p>
-            <p className="text-primary-700 cursor-pointer hover:text-primary-500 font-medium">
+            <p className="text-[#667085] font-medium">Dismiss</p>
+            <p className="text-primary-700 cursor-pointer hover:text-[#9E77ED] font-medium">
               What’s new?
             </p>
           </div>
@@ -92,7 +92,7 @@ const Sidebar = () => {
               alt="olive"
             />
             <div>
-              <p className="text-gray-900 font-medium">Olivia Rhye</p>
+              <p className="text-[#101828] font-medium">Olivia Rhye</p>
               <span>olivia@untitledui.com</span>
             </div>
           </div>

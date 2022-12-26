@@ -1,12 +1,15 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @layer base {
     body {
-        @apply text-gray-500 text-sm;
-      }
+        @apply text-[#F9FAFB] text-sm;
+    }
 }
-@layer utilities{
-    .divider { @apply w-full border-t my-4 border-gray-300}
+
+@layer utilities {
+    .divider {
+        @apply w-full border-t my-4 border-[#D0D5DD]
+    }
 }

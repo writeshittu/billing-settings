@@ -38,7 +38,7 @@ const Dashboard = () => {
         </section>
         <main className="bg-[#f5f5f5] min-h-screen mt-16 md:mt-0 py-5 px-3 md:py-[1.875rem] md:px-[2.2rem]">
           <div className="">
-            <p className=" text-2xl md:text-[1.875rem] text-gray-900 font-medium leading-[2.375rem]">
+            <p className=" text-2xl md:text-[1.875rem] text-[#101828] font-medium leading-[2.375rem]">
               Settings
             </p>
             <p className=" text-base ">
@@ -49,16 +49,16 @@ const Dashboard = () => {
                 <p
                   key={item}
                   onClick={() => setCurrentTab(item)}
-                  className={`text-gray-900 whitespace-nowrap py-[0.625rem] cursor-pointer hover:bg-gray-50 px-4 font-medium border ${
+                  className={`text-[#101828] whitespace-nowrap py-[0.625rem] cursor-pointer hover:bg-gray-50 px-4 font-medium border ${
                     currentTab === index + 1 && "bg-gray-50"
-                  } border-gray-300 first:rounded-l-lg last:rounded-r-lg`}
+                  } border-[#D0D5DD] first:rounded-l-lg last:rounded-r-lg`}
                 >
                   {item}
                 </p>
               ))}
             </div>
             <section>
-              <p className="text-gray-900 font-medium text-lg">
+              <p className="text-[#101828] font-medium text-lg">
                 Payment method
               </p>
               <p>Update your billing details and address.</p>
@@ -66,7 +66,7 @@ const Dashboard = () => {
             <div className=" divider" />
             <section className="md:flex my-7 items-start gap-20">
               <div className="my-4 md:my-0">
-                <p className="text-gray-700 font-medium">Contact email</p>
+                <p className="text-[#344054] font-medium">Contact email</p>
                 <p>Where should invoices be sent?</p>
               </div>
               <div>
@@ -82,7 +82,7 @@ const Dashboard = () => {
                     className="h-4 w-4 border border-gray-50 checked:accent-primary-600 checked:border-primary-600 focus:outline-none transition duration-200 align-top cursor-pointer"
                   />
                   <div>
-                    <p className="text-gray-700  font-medium">
+                    <p className="text-[#344054]  font-medium">
                       Send to my account email
                     </p>
                     <p className="">olivia@untitledui.com</p>
@@ -105,7 +105,7 @@ const Dashboard = () => {
                   <div>
                     <label
                       htmlFor="alternateEmail"
-                      className="text-gray-700 font-medium cursor-pointer"
+                      className="text-[#344054] font-medium cursor-pointer"
                     >
                       Send to an alternative email
                     </label>
@@ -118,7 +118,7 @@ const Dashboard = () => {
                       <input
                         type="email"
                         placeholder="billing@untitledui.com"
-                        className="border border-gray-300 rounded-lg py-[10px] px-[.875rem] h-11 pl-10 outline-none w-full md:w-[30.5rem] shadow"
+                        className="border border-[#D0D5DD] rounded-lg py-[10px] px-[.875rem] h-11 pl-10 outline-none w-full md:w-[30.5rem] shadow"
                       />
                     </div>
                   </div>
@@ -128,7 +128,7 @@ const Dashboard = () => {
             <div className="divider" />
             <section className="md:flex mt-2 items-start gap-20">
               <div className="my-4 md:my-0">
-                <p className="text-gray-700 font-medium">Card details</p>
+                <p className="text-[#344054] font-medium">Card details</p>
                 <p>Select default payment method.</p>
               </div>
               <div>
@@ -138,23 +138,23 @@ const Dashboard = () => {
                     onClick={() => onSelectCard(card.id)}
                     className={`flex justify-between gap-2 items-start mb-2  rounded-lg ${
                       selectedCard.includes(card.id)
-                        ? "bg-primary-50 border-primary-300"
-                        : "bg-gray-100 border-gray-300"
-                    } w-full md:max-w-[49rem] md:w-[38rem] md:h-[6.25rem] p-4 cursor-pointer hover:bg-primary-50 border `}
+                        ? "bg-[#F9F5FF] border-[#D6BBFB]"
+                        : "bg-gray-100 border-[#D0D5DD]"
+                    } w-full md:max-w-[49rem] md:w-[38rem] md:h-[6.25rem] p-4 cursor-pointer hover:bg-[#F9F5FF] border `}
                   >
                     <div className="flex gap-2 md:gap-5 items-start">
                       <img src={card.cardIcon} alt={card.cardType} />
                       <div>
-                        <p className=" font-medium text-primary-800">
+                        <p className=" font-medium text-[#53389E ]">
                           {card.cardType} ending in {card.lastFourDigit}
                         </p>
-                        <p className="mb-2 font-normal text-primary-600">
+                        <p className="mb-2 font-normal text-[#7F56D9]">
                           Expiry {card.expiryDate}
                         </p>
-                        <span className=" hover:text-gray-500 text-primary-500 cursor-pointer">
+                        <span className=" hover:text-[#667085] text-[#9E77ED] cursor-pointer">
                           Set as default
                         </span>
-                        <span className=" text-primary-700 font-medium px-4 cursor-pointer">
+                        <span className=" text-[#6941C6] font-medium px-4 cursor-pointer">
                           Edit
                         </span>
                       </div>
@@ -170,7 +170,7 @@ const Dashboard = () => {
 
                 <div className="flex cursor-pointer my-3">
                   <img src={addIcon} className="mr-1" alt="" />
-                  <span className=" font-medium text-gray-500 hover:text-gray-600">
+                  <span className=" font-medium text-[#667085] hover:text-gray-600">
                     Add new payment method
                   </span>
                 </div>
@@ -178,10 +178,10 @@ const Dashboard = () => {
             </section>
             <section className="my-6 md:my-0">
               <header className="md:flex justify-between items-center my-4">
-                <span className="text-gray-900 text-lg font-medium">
+                <span className="text-[#101828] text-lg font-medium">
                   Billing history
                 </span>
-                <button className=" my-2 md:my-0 flex items-center justify-center gap-2  border border-gray-300 rounded-lg py-[.625rem] width-[9.125rem] h-[2.5rem] text-gray-700 font-medium px-4 shadow-sm outline-none">
+                <button className=" my-2 md:my-0 flex items-center justify-center gap-2  border border-[#D0D5DD] rounded-lg py-[.625rem] width-[9.125rem] h-[2.5rem] text-[#344054] font-medium px-4 shadow-sm outline-none">
                   <img src={cloudicon} alt="" />
                   Download all
                 </button>

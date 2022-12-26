@@ -7,8 +7,8 @@ const Table = ({ data }) => {
   return (
     <div>
       <div className="overflow-x-auto relative shadow-md sm:rounded-lg">
-        <table className="w-full text-sm text-left text-gray-500 ">
-          <thead className="text-xs text-gray-500 font-medium bg-gray-50 py-3 px-6">
+        <table className="w-full text-sm text-left text-[#667085] ">
+          <thead className="text-xs text-[#667085] font-medium bg-[#F9FAFB] py-3 px-6">
             <tr>
               <th scope="col" className="py-3 px-6">
                 <div className="flex items-center gap-4">
@@ -48,7 +48,7 @@ const Table = ({ data }) => {
               <tr key={info.date} className="bg-white border-b">
                 <th
                   scope="row"
-                  className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap"
+                  className="py-4 px-6 font-medium text-[#101828] whitespace-nowrap"
                 >
                   <div className="flex items-center gap-4">
                     <input
