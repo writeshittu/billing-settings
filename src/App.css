@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+html,
+body {
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.user-on-plan {
+    position: relative;
+    border: 1.5px solid #ffffff;
+    width: 24px;
+    left: -6px;
+    height: 24px;
+    border-radius: 50%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.user-on-plan.user-2 {
+    left: -12px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.user-on-plan.user-3 {
+    left: -18px;
 }
 
-.App-link {
-  color: #61dafb;
+.user-on-plan.user-4 {
+    left: -24px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.user-on-plan.user-5 {
+    left: -30px;
+}
+
+.user-on-plan.user-6 {
+    left: -36px;
+}
+
+
+.checkbox {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+
+
+.checkbox+label {
+    position: relative;
+    cursor: pointer;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    height: 23px;
+
+}
+
+.checkbox+label::before {
+    content: " ";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 3px;
+    width: 21px;
+    height: 21px;
+    background-color: #f5f5f5;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #D0D5DD;
+    border-radius: 6px;
+    box-shadow: none;
+}
+
+.checkbox:checked+label::after {
+    content: " ";
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBmaWxsPSIjN2Y1NmQ5IiBkPSJNMTczLjg5OCA0MzkuNDA0bC0xNjYuNC0xNjYuNGMtOS45OTctOS45OTctOS45OTctMjYuMjA2IDAtMzYuMjA0bDM2LjIwMy0zNi4yMDRjOS45OTctOS45OTggMjYuMjA3LTkuOTk4IDM2LjIwNCAwTDE5MiAzMTIuNjkgNDMyLjA5NSA3Mi41OTZjOS45OTctOS45OTcgMjYuMjA3LTkuOTk3IDM2LjIwNCAwbDM2LjIwMyAzNi4yMDRjOS45OTcgOS45OTcgOS45OTcgMjYuMjA2IDAgMzYuMjA0bC0yOTQuNCAyOTQuNDAxYy05Ljk5OCA5Ljk5Ny0yNi4yMDcgOS45OTctMzYuMjA0LS4wMDF6Ii8+PC9zdmc+");
+    background-repeat: no-repeat;
+    background-size: 11px 11px;
+    background-position: center center;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    left: 0px;
+    top: 0px;
+    text-align: center;
+    background-color: #F9F5FF;
+    font-weight: 500;
+    border: 1px solid #7F56D9;
+    border-radius: 6px;
+    font-size: 10px;
+    height: 20px;
+    width: 20px;
 }
